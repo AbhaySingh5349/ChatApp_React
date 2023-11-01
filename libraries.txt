@@ -6,3 +6,8 @@ npx create-react-app react-chat-app --template typescript
 
 npm install -D tailwindcss
 npx tailwindcss init
+npm install tailwind-scrollbar-hide
+
+// material ui
+
+npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
