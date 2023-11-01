@@ -1,0 +1,8 @@
+// initialize client
+
+npx create-react-app react-chat-app --template typescript
+
+// tailwind css
+
+npm install -D tailwindcss
+npx tailwindcss init
