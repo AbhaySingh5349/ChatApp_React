@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
+
 import ChatCard from './ChatCard';
 
+import { useSelector } from 'react-redux';
+
 const SideBarConversations = () => {
+  const isLightTheme = useSelector((state: any) => state.themeKey); // to access redux store's state
+
   const [conversations, setConversations] = useState([
     {
       name: 'test #1',
@@ -21,7 +26,11 @@ const SideBarConversations = () => {
   ]);
 
   return (
-    <div className="m-2 bg-white rounded-[8px] grow overflow-scroll scrollbar-hide">
+    <div
+      className={`m-2 rounded-[8px] grow overflow-scroll scrollbar-hide ${
+        isLightTheme ? 'bg-white' : 'bg-backdrop-dark'
+      }`}
+    >
       {conversations.map((item: any) => {
         return (
           <ChatCard

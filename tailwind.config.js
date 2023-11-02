@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  darkMode: ['class'],
   theme: {
     extend: {
       colors: {
@@ -11,6 +12,7 @@ module.exports = {
             300: '#f2f2f2',
             200: '#f7fcf9',
           },
+          dark: '#6c8fa6',
         },
         message: {
           self: '#dff2b1',
